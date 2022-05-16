@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="BehaviourTreeEditor.uss" />
+    <uie:Toolbar>
+        <ui:Button text="Save" display-tooltip-when-elided="true" />
+    </uie:Toolbar>
+    <SplitView>
+        <ui:VisualElement>
+            <ui:Label text="Inspector" display-tooltip-when-elided="true" name="Label" />
+            <InspectorView />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1;">
+            <ui:Label text="Tree View" display-tooltip-when-elided="true" />
+            <BehaviourTreeView focusable="true" style="flex-grow: 1;" />
+        </ui:VisualElement>
+    </SplitView>
+</ui:UXML>

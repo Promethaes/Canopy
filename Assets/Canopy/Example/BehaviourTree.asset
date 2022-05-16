@@ -1,0 +1,152 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6126855309492100450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6fb2b921df33a74494cfb039213aa0c, type: 3}
+  m_Name: MoveToRandomNearbyPosNode
+  m_EditorClassIdentifier: 
+  blackboard: {fileID: 0}
+  state: 0
+  started: 0
+  guid: d7194ada904d9ff4bb96d1eee724f4e9
+  position: {x: 7, y: 371}
+  childIndex: 2
+  parent: {fileID: 2835520255207895651}
+  title: MoveToRandomNearbyPosNode
+  length: 15
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcffa3e92ddfd4b47bbd582531000a7e, type: 3}
+  m_Name: BehaviourTree
+  m_EditorClassIdentifier: 
+  rootNode: {fileID: 5397377553242334034}
+  state: 0
+  nodes:
+  - {fileID: 5397377553242334034}
+  - {fileID: 2835520255207895651}
+  - {fileID: 292703626848844871}
+  - {fileID: 6350897272945327491}
+  - {fileID: -6126855309492100450}
+  - {fileID: 939448315212346170}
+--- !u!114 &292703626848844871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c8a06e2ff59231499684003c7a85370, type: 3}
+  m_Name: RepeatNode
+  m_EditorClassIdentifier: 
+  blackboard: {fileID: 0}
+  state: 0
+  started: 0
+  guid: df09116779aa7274d99ae7ecbe421618
+  position: {x: 57.61504, y: 62.58}
+  childIndex: 1
+  parent: {fileID: 5397377553242334034}
+  title: RepeatNode
+  child: {fileID: 2835520255207895651}
+--- !u!114 &939448315212346170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d086f73ecd43f534dbd5de70135b8629, type: 3}
+  m_Name: WaitNode
+  m_EditorClassIdentifier: 
+  blackboard: {fileID: 0}
+  state: 0
+  started: 0
+  guid: 1be9218fee6734b44ad57e98241872ad
+  position: {x: 295, y: 379}
+  childIndex: 3
+  parent: {fileID: 2835520255207895651}
+  title: WaitNode
+  duration: 1
+--- !u!114 &2835520255207895651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc20394a35c63d147a760e008c3368c6, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  blackboard: {fileID: 0}
+  state: 0
+  started: 0
+  guid: 557e9abe95907724cb6b4ec44a0ce6ee
+  position: {x: 41.000046, y: 204.99998}
+  childIndex: 1
+  parent: {fileID: 292703626848844871}
+  title: SequencerNode
+  children:
+  - {fileID: 6350897272945327491}
+  - {fileID: -6126855309492100450}
+  - {fileID: 939448315212346170}
+--- !u!114 &5397377553242334034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c17515771f9a3d64d8fa9471e7dd248f, type: 3}
+  m_Name: RootNode
+  m_EditorClassIdentifier: 
+  blackboard: {fileID: 0}
+  state: 0
+  started: 0
+  guid: 5e71298170f410e4b9bbc21c7af62871
+  position: {x: 65.99997, y: -74.615}
+  childIndex: 1
+  parent: {fileID: 0}
+  title: RootNode
+  child: {fileID: 292703626848844871}
+--- !u!114 &6350897272945327491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d086f73ecd43f534dbd5de70135b8629, type: 3}
+  m_Name: WaitNode
+  m_EditorClassIdentifier: 
+  blackboard: {fileID: 0}
+  state: 0
+  started: 0
+  guid: 982a0a967105bfc4ca80c264ae043925
+  position: {x: -181, y: 379}
+  childIndex: 1
+  parent: {fileID: 2835520255207895651}
+  title: WaitNode
+  duration: 1
