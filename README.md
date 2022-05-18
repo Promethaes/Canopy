@@ -1,12 +1,15 @@
 # Canopy
 A Behaviour Tree Editor for Unity largely based off of [Kiwi Coder's BT editor tutorials](https://www.youtube.com/c/TheKiwiCoder).
 
+Documentation and an upload to the Unity Asset Store are both currently in progress.
+
+This tool mainly differs from KiwiCoder's in the way that the blackboard works. Canopy provides a generic blackboard that works in the same style as querying an element in UI Builder and other such web-alike APIs.
+
 # Features
 - Create Behaviour Trees and Blackboards in Unity visually
 - Extend node types via inheritence
 - Basic AI perception and navigation wrappers
 - Modular Blackboard focused on ease of use
-
 
 # Helper Node Types
 - Concurrency Node (Single Threaded): Run all children at the same time. If one fails, the whole node fails.
@@ -21,3 +24,8 @@ A Behaviour Tree Editor for Unity largely based off of [Kiwi Coder's BT editor t
 - Repeat Node: Loops child's behaviour forever.
 - Stop In Place Node: Stops the agent in place.
 - Wait Node: Waits for a specified amount of time before returning success.
+
+# Planned Improvements
+- Change over to event based architecture
+- Nodes that can interrup the current tree flow
+- More fleshed out perception system
