@@ -21,6 +21,7 @@ MonoBehaviour:
   parent: {fileID: 2835520255207895651}
   title: MoveToRandomNearbyPosNode
   length: 15
+  edgeAvoidance: 5
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108,6 +109,7 @@ MonoBehaviour:
   - {fileID: 6350897272945327491}
   - {fileID: -6126855309492100450}
   - {fileID: 939448315212346170}
+  allChildrenMustSucceed: 1
 --- !u!114 &5397377553242334034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,7 +126,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 5e71298170f410e4b9bbc21c7af62871
-  position: {x: 65.99997, y: -74.615}
+  position: {x: 65.99994, y: -97.8944}
   childIndex: 1
   parent: {fileID: 0}
   title: RootNode
